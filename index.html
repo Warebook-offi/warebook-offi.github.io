@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Warebook · Música</title>
+<meta name="description" content="Web oficial de Warebook. Música, vídeos y enlaces a todas mis plataformas.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎵</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f1f3fb;
+    --ink: #12132b;
+    --muted: #55587a;
+    --accent: #2b50ff;
+    --accent-ink: #ffffff;
+    --line: #cfd4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12132b;
+      --ink: #eef0ff;
+      --muted: #a4a8cf;
+      --accent: #6f8aff;
+      --accent-ink: #12132b;
+      --line: #2c2f5a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  header { padding: 4rem 0 3rem; }
+  h1 {
+    font-family: "Syne", "Arial Black", sans-serif;
+    font-weight: 800;
+    font-size: clamp(3.5rem, 17vw, 8rem);
+    line-height: .9;
+    letter-spacing: -.04em;
+    margin: 0 0 1.5rem;
+  }
+  .tagline { max-width: 30rem; color: var(--muted); font-size: 1.2rem; margin: 0 0 2rem; }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 700;
+    text-decoration: none;
+    padding: .85rem 1.6rem;
+    border-radius: 999px;
+  }
+  .btn:hover { filter: brightness(1.1); }
+
+  section { padding: 2.5rem 0; border-top: 1px solid var(--line); }
+  h2 { font-family: "Syne", "Arial Black", sans-serif; font-size: 1.8rem; letter-spacing: -.02em; margin: 0 0 1.25rem; }
+
+  .links { list-style: none; margin: 0; padding: 0; }
+  .links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--line);
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .links a span { color: var(--muted); font-weight: 400; font-size: 1rem; }
+  .links a:hover { color: var(--accent); }
+
+  .tracks { list-style: none; margin: 0; padding: 0; }
+  .tracks li { padding: .9rem 0; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; gap: 1rem; }
+  .tracks .year { color: var(--muted); }
+
+  footer { padding: 2.5rem 0 4rem; color: var(--muted); border-top: 1px solid var(--line); }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Warebook</h1>
+    <!-- CAMBIA este texto por una frase tuya sobre tu música -->
+    <p class="tagline">Música nueva, vídeos y todo lo que voy publicando, en un solo sitio.</p>
+    <a class="btn" href="#escuchar">Escuchar ahora</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="escuchar">
+    <h2>Escúchame y sígueme</h2>
+    <ul class="links">
+      <!-- CAMBIA cada href="#" por tu enlace real -->
+      <li><a href="#">YouTube <span>Vídeos y lanzamientos</span></a></li>
+      <li><a href="#">TikTok <span>Clips y novedades</span></a></li>
+      <li><a href="#">Spotify y más plataformas <span>Enlace de RouteNote</span></a></li>
+      <li><a href="#">Suno <span>Mi perfil</span></a></li>
+    </ul>
+  </section>
+
+  <section id="musica">
+    <h2>Música</h2>
+    <ul class="tracks">
+      <!-- CAMBIA o copia estas líneas para añadir tus canciones -->
+      <li><span>Título de tu canción</span><span class="year">2026</span></li>
+      <li><span>Otro título</span><span class="year">2026</span></li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <!-- CAMBIA el correo por el tuyo -->
+    <p>Para colaboraciones o prensa: <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Warebook</div>
+</footer>
+
+</body>
+</html>
